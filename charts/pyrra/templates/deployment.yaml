@@ -35,6 +35,9 @@ spec:
             {{- if .Values.genericRules.enabled }}
             - --generic-rules
             {{- end }}
+            {{- if .Values.configmapMode.enabled }}
+            - --config-map-mode=true
+            {{- end }}            
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
         - name: {{ .Chart.Name }}

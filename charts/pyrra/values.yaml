@@ -95,3 +95,7 @@ serviceMonitor:
 genericRules:
   # -- enables generate Pyrra generic recording rules. Pyrra generates metrics with the same name for each SLO.
   enabled: false
+
+configmapMode:
+  # --enables generate Pyrra generic recording rules and save each recording rule in a separate ConfigMap.
+  enabled: false

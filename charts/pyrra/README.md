@@ -15,6 +15,7 @@ Additionaly, you (most likely) will need to specify prometheusExternalUrl with U
 | additionalLabels | object | `{}` |  |
 | fullnameOverride | string | `""` | Overrides helm-generated chart fullname |
 | genericRules.enabled | bool | `false` | enables generate Pyrra generic recording rules. Pyrra generates metrics with the same name for each SLO. |
+| configmapMode.enabled | bool | `false` | enables generate Pyrra generic recording rules and save each recording rule in a separate ConfigMap. |
 | image.pullPolicy | string | `"IfNotPresent"` | Overrides pullpolicy |
 | image.repository | string | `"ghcr.io/pyrra-dev/pyrra"` | Overrides the image repository |
 | image.tag | string | `"v0.6.2"` | Overrides the image tag |
